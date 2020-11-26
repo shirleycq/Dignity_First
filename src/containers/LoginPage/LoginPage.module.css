@@ -1,0 +1,8 @@
+.Cover {
+    background-image: url("../../etc//images/dignity-background.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}

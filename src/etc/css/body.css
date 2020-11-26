@@ -1,0 +1,124 @@
+html,body{
+	height:100%;
+}
+.dignity-body{
+	height:100vh;
+	width:100%;
+	display:block;
+	position:relative;
+}
+
+.dignity-background{
+	background-image: url("../images/dignity-background.jpg");
+	height:100vh;
+	background-attachment: fixed;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position:fixed;
+	width:100%;
+	z-index:3;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.dignity-content-table{
+	display:table;
+	height:100%;
+	width:100%;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.dignity-content-outer{
+	height:100vh;
+	width:100%;
+}
+.dignity-content-middle{
+    height: 100%;
+}
+/* 
+if you want strict vertical-align
+Uncomment below and remove all media queries in this page.
+*/
+/*
+.dignity-content-middle{
+    height: 100%;
+	display:table-cell;
+	vertical-align: middle
+}
+*/
+.dignity-content-inner{
+	background:	rgb(239,239,240,0.9);
+	z-index: 3;
+	position: relative;
+	height:100%;
+}
+
+
+@media screen and (min-width:992px) {
+	.screen-only {
+		display:block;
+	}
+	.screen-only-inline-block{
+		display:inline-block;
+	}
+	.device-only, .device-only-inline-block{
+		display:none !important;
+	}
+	.dignity-content-table{
+			padding-top:9vw;
+	}
+
+}
+@media screen and (min-width:320px) and (max-width:991px) {
+	.device-only {
+		display:block;
+	}
+	.device-only-inline-block{
+		display:inline-block;
+	}
+	.screen-only, .screen-only-inline-block{
+		display:none !important;
+	}
+	.dignity-content-table{
+		padding-top:80px;
+	}
+
+}
+/* media queries to remove if strict middle is required */
+
+@media screen and (max-height: 400px){
+	.dignity-content-middle {
+		padding-top:0px;
+	}
+}
+@media screen and (min-height:501px) and (max-height: 600px){
+	.dignity-content-middle {
+		padding-top:50px;
+	}
+}
+@media screen and (min-height:601px) and (max-height: 700px){
+	.dignity-content-middle {
+		padding-top:70px;
+	}
+}
+@media screen and (min-height:701px) and (max-height: 800px){
+	.dignity-content-middle {
+		padding-top:80px;
+	}
+}
+@media screen and (min-height:801px) and (max-height: 1081px){
+	.dignity-content-middle {
+		padding-top:142px;
+	}
+}
+@media screen and (min-height: 1082px){
+	.dignity-content-middle {
+		padding-top:13.1vh;
+	}
+}

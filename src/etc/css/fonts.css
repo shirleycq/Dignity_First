@@ -1,0 +1,48 @@
+
+@font-face {
+  font-family: HelveticaNeue;
+  src: url("../fonts/HelveticaNeue.ttf");
+}
+@font-face {
+  font-family: HelveticaNeueBold;
+  src: url("../fonts/Helvetica Neu Bold.ttf");
+}
+
+@font-face {
+  font-family: HelveticaNeueBd;
+  src: url("../fonts/HelveticaNeueBd.ttf");
+}
+
+@font-face {
+  font-family: HelveticaNeueHv;
+  src: url("../fonts/HelveticaNeueHv.ttf");
+}
+
+@font-face {
+  font-family: HelveticaNeueIt;
+  src: url("../fonts/HelveticaNeueIt.ttf");
+}
+@font-face {
+  font-family: HelveticaNeueLt;
+  src: url("../fonts/HelveticaNeueLt.ttf");
+}
+@font-face {
+  font-family: HelveticaNeueMed;
+  src: url("../fonts/HelveticaNeueMed.ttf");
+}
+@font-face {
+	font-family : PTSansCaption-Bold;
+	src: url("../fonts/PTSansCaption-Bold.ttf")
+}
+@font-face {
+	font-family: PTSansCaption-Regular;
+	src:url("../fonts/PTSansCaption-Regular.ttf");
+}
+
+
+
+@keyframes set-visible{
+	  0%   { opacity: 0; }
+	  90%   { opacity: 0; }
+	  100% { opacity: 1; }
+}

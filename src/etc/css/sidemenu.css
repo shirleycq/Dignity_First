@@ -1,0 +1,204 @@
+
+.sidemenu-item.active{
+	background: rgb(255,255,255,0.13);
+}
+
+.sidemenu-item-text{
+	font-family:PTSansCaption-Regular;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+.sidemenu-item-img{
+	text-align:center;
+}
+.sidemenu-item-img img{
+	display:inline-block;
+}
+.sidemenu-item-text{
+	text-align:center;
+}
+.sidemenu-item:hover{
+	background:rgb(255,255,255,0.13);
+}
+@media screen and (min-width: 992px) and (max-width:2560px){
+	.sidemenu-item-img.dashboard-icon img{
+		height:1.9275vw;
+		width:auto;
+	}
+	.sidemenu-item-img.application-icon img{
+		width:auto;
+		height:2.292vw;
+	}
+	.sidemenu-item-img.registration-icon img{
+		height:2.5524vw;
+		width:auto;
+	}
+	.sidemenu-item-img.queries-icon img{
+		height:2.0314vw;
+		width:auto;
+	}
+	.sidemenu-item-text{
+		padding-top:0.4vw;
+		font-size:0.520835vw;
+	}
+	.sidemenu-item{
+		height:6.771vw;
+	}
+	.sidemenu {
+		width: 7.032vw;
+		float: left;
+		background: #1E1E2E;
+		height: 100%;
+		position: absolute;
+		top: 0;
+	}
+	.sidemenu-items-outer{
+		position:fixed;
+		width:inherit;
+	}
+	.sidemenu-item-inner{
+		display:table-cell;
+		vertical-align:middle
+	}
+	.sidemenu-item{
+		display:table;
+		width:100%;
+	}
+	.sidemenu-frame{
+		position:relative;
+	}
+	.sidemenu-frame input {
+		display:none;
+	}
+	.sidemenu-frame label {
+		display:none;
+	}
+}
+@media screen and (min-width: 320px) and (max-width:991px){
+	.sidemenu-item-img img {
+		height:25px;
+		width:auto;
+	}
+	.sidemenu-item-img{
+		height:45px;
+		padding-top:10px;
+		width:45px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		box-sizing: border-box;
+		border-radius:50%;
+		background:black;
+	}
+	.sidemenu-item {
+		position:relative;
+		margin-top:10px;
+		margin-bottom:10px;
+		display:inherit;
+	}
+	
+	.sidemenu-frame{
+		position:relative;
+		visibility:visible;
+		left:10px;
+		width:0px;
+		overflow:visible;
+	}
+	.sidemenu-frame .side-items-outer{
+		visibility:visible;
+		animation:set-visible 1s;
+	}
+	.sidemenu-frame label {
+		height: 80px;
+		margin: auto;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		border-bottom-left-radius: 50px;
+		border-top-left-radius: 50px;
+		background: black;
+		min-width:40px;
+	}
+	.sidemenu-frame label::after{
+		content:'';
+		height:20px;
+		width:20px;
+		background:url('../images/arrow.svg');
+		background-repeat:no-repeat;
+		top:30px;
+		left:2px;
+		position:absolute;
+		transform: rotate(90deg);
+	}
+	.sidemenu-frame input {
+		position: absolute;
+		right: -100vw;
+	}
+	.sidemenu-item{
+		right:-50px;
+		animation: sidemenu-check-rev 1s;
+	}
+	.side-menu-checkbox:checked ~ .side-items-outer .sidemenu-item:nth-of-type(1), .side-menu-checkbox:checked ~ .side-items-outer .sidemenu-item:nth-of-type(4){
+		animation: sidemenu-check-first 1s;
+		right:60px;
+	}
+	.side-menu-checkbox:checked ~ .side-items-outer .sidemenu-item:nth-of-type(2), .side-menu-checkbox:checked ~ .side-items-outer .sidemenu-item:nth-of-type(3){
+		animation: sidemenu-check-second 1s;
+		right:100px;
+	}
+	.side-menu-checkbox:not(:checked) ~ .side-items-outer .sidemenu-item:nth-of-type(1), .side-menu-checkbox:not(:checked) ~ .side-items-outer .sidemenu-item:nth-of-type(4){
+		animation: sidemenu-check-first-rev 1s;
+		right:-60px;
+	}
+	.side-menu-checkbox:not(:checked) ~ .side-items-outer .sidemenu-item:nth-of-type(2), .side-menu-checkbox:not(:checked) ~ .side-items-outer .sidemenu-item:nth-of-type(3){
+		animation: sidemenu-check-second-rev 1s;
+		right:-60px;
+	}
+	.sidemenu-item:nth-of-type(2) {
+		margin-bottom:20px;
+	}
+	
+	@keyframes sidemenu-check-first {
+		0%   { right: -60px; }
+		100% { right: 60px; }
+	}
+	@keyframes sidemenu-check-second {
+		0%   { right: -60px; }
+		100% { right: 100px; }
+	}
+	@keyframes sidemenu-check-first-rev {
+		0%   { right: 60px; }
+		100% { right: -60px; }
+	}
+	@keyframes sidemenu-check-second-rev {
+		0%   { right: 100px; }
+		100% { right: -60px; }
+	}
+}
+@media screen and (min-width:320px) and (max-width:991px){
+	.sidemenu {    
+		height: 100%;
+		position: fixed;
+		right: 0;
+		top:0;
+		display:table;
+		z-index:3;
+	}
+	.sidemenu-items-outer{
+		display:table-cell;
+		vertical-align:middle;
+	}
+	.sidemenu-item-text{
+		display:none;
+	}
+}
+@media screen and (max-height:1083px){
+	.sidemenu-items-outer{
+		margin-top:1.5694vh;
+	}
+}
+
+
